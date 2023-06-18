@@ -1,0 +1,88 @@
+
+
+.sidebar{
+    
+    height: 100vh;
+    width: 280px;
+}
+
+.sidebar-collapsed{
+    transition: all .5s ease-in-out;
+    height: 100vh;
+    width: 80px;
+}
+
+.nav-item{
+    margin: .5rem 0;
+}
+
+.small-img{
+    width: auto;
+}
+
+.profile{
+    margin: 2rem 0;
+    margin-top: 5rem;
+}
+.circle{
+  width: 70%;
+  /* border-radius: 30px; */
+}
+.profile-image{
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.menu{
+    background: #ffffff25;
+    padding: .5rem;
+    border-radius: 10px;
+}
+
+.coy-name{
+    margin-top: -2rem;
+    position: relative;
+}
+
+.coy-branch_and_email{
+    margin: .5rem 0;
+}
+
+/* sidebar css*/
+
+.text-bg-dark{
+    background-color: var(--text-black);
+}
+
+.nav-link{
+    padding: .8rem;
+    color: var(--text-white);
+}
+
+.nav-item{
+ transition: all .3s ease-in-out;
+}
+
+.nav-item:hover{
+  background: #fff;
+  border-radius: 10px;
+}
+
+.nav-item:hover .nav-link{
+    color: var(--text-black);
+  }
+
+.active{
+    background: #ffffff25 !important;
+    border-radius: 10px;
+
+}
+
+/* sidebar end */
+
+
+/* short navbar */
+
+
+
+/* short navbar end*/

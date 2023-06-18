@@ -1,0 +1,334 @@
+<section class="container-fluid">
+    <div class="welcome-wrapper flex-wrap pb-3 pt-3">
+        <div class="row">
+            <div class="col mb-3">
+                <h6 class="title-txt">Hello&nbsp;<strong class="notranslate">accountName</strong></h6>
+                <span class="small fw-100">Today is {{formattedDate}}</span>
+            </div>
+            <div class="col-auto mb-3">
+                <button class="btn btn-dark p-2 px-3 d-flex align-items-center">
+                    <span class="text-light">Select Premises </span>
+                    <span class="material-symbols-rounded text-light">arrow_drop_down</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="row dash-action-wrapper mt-0">
+        <div class="col-xl-4 col-12">
+            <a routerLink="/assets" class="dashboard-card"
+                style="background: url(assets/img/card-background.svg) bottom right no-repeat #71357B;">
+                <main>
+                    <div class="row w-100">
+                        <div class="col">
+                            <div class="dac-icon-wrapper"><span class="material-symbols-rounded">payments</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card-time text-end">
+                                <span class="text-light">Updated: <span class=" text-light">days ago</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row w-100 text-start mt-4">
+                        <h1 style="color:#fff;">total</h1>
+
+
+
+
+                    </div>
+                    <div class="row w-100 text-start text-muted mt-1 align-items-center">
+                        <div class="col">
+                            <span class="text-uppercase text-light">Assets Valuation</span>
+                        </div>
+                    </div>
+                </main>
+            </a>
+        </div>
+
+        <div class="col-xl col-lg-6">
+            <a routerLink="/assets" class="dashboard-card" style="background:#567df4;">
+                <main>
+                    <div class="row w-100">
+                        <div class="col">
+                            <div class="dac-icon-wrapper"><span class="material-symbols-rounded">payments</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card-time text-end">
+                                <span class="text-light">Updated: <span class=" text-light">days ago</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row w-100 text-start mt-4">
+                        <h1 style="color:#fff;">total</h1>
+                    </div>
+                    <div class="row w-100 text-start text-muted mt-1 align-items-center">
+                        <div class="col">
+                            <span class="text-uppercase text-light">Total Assets</span>
+                        </div>
+                    </div>
+                </main>
+            </a>
+        </div>
+
+        <div class="col-xl col-lg-6" style="color: #292E47;">
+            <a routerLink="/assets" class="dashboard-card" style="background:#FFC600;">
+                <main>
+                    <div class="row w-100">
+                        <div class="col">
+                            <div class="dac-icon-wrapper"><span class="material-symbols-rounded">payments</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card-time text-end">
+                                <span class="">Updated: <span class="">days ago</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row w-100 text-start mt-4">
+                        <h1>total</h1>
+                    </div>
+                    <div class="row w-100 text-start text-muted mt-1 align-items-center">
+                        <div class="col">
+                            <span class="text-uppercase">Due for Inspection</span>
+                        </div>
+                    </div>
+                </main>
+            </a>
+        </div>
+
+        <div class="col-xl">
+            <a routerLink="/assets" class="dashboard-card" style="background:#fff; color: #292E47;">
+                <main>
+                    <div class="row w-100">
+                        <div class="col">
+                            <div class="dac-icon-wrapper"><span class="material-symbols-rounded">payments</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card-time text-end">
+                                <span class="">Updated: <span class="">days ago</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row w-100 text-start mt-4">
+                        <h1>total</h1>
+                    </div>
+                    <div class="row w-100 text-start text-muted mt-1 align-items-center" style="color: #292E47;">
+                        <div class="col">
+                            <span class="text-uppercase">Users</span>
+                        </div>
+                    </div>
+                </main>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="container-fluid">
+    <div class="row">
+        <div class="col-xl-6">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row w-100 my-3">
+                        <div class="col">
+                            <button class="btn float-start fw-500"> Recently Added</button>
+                        </div>
+                        <div class="col w-100">
+                            <div class="card-time text-end">
+                                <button class="btn text-primary text-decoration-none" style="font-size: smaller;"
+                                    routerLink="/assets"> View All
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="dashboard-card ">
+                        <div class="card border-0">
+                            <div class="card-body" style="overflow: scroll;">
+                                <table class="table text-start">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">S/N</th>
+                                            <th scope="col">Asset Name</th>
+                                            <th scope="col">Added By</th>
+                                            <th scope="col">Location</th>
+                                            <th scope="col">Date Tagged</th>
+                                            <th scope="col">Purchase Cost</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>name</td>
+                                            <td>user name</td>
+                                            <td>location</td>
+                                            <td>Date</td>
+                                            <td style="color: #3AD29F;">$200</td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="6" class="text-center">NO DATA</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-3">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row w-100 my-3">
+                        <div class="col">
+                            <button class="btn float-start fw-500"> Statistics</button>
+                        </div>
+                    </div>
+                    <div class="dashboard-card">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card border-0">
+
+                                    <div>
+                                        <div class="d-block justify-content-center align-items-center">
+                                            <div>
+                                                <img src="./assets/img/dataEmpty.png" class="img-fluid d-block"
+                                                    width="350" />
+                                                <p class="my-2 d-block text-muted opacity-75">
+                                                    Looks like there's not enough data yet.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-xl-3">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row w-100 my-3">
+                        <div class="col">
+                            <button class="btn float-start fw-500"> Activity</button>
+                        </div>
+                        <div class="col w-100">
+                            <div class="card-time text-end">
+                                <button class="btn text-primary text-decoration-none" style="font-size: smaller;"
+                                    routerLink="/assets"> View All
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card border-0" style="background-color: transparent;">
+
+                                    <div class="list-group list-group-checkable d-grid gap-3 border-0">
+                                        <input class="list-group-item-check pe-none" type="radio"
+                                            name="listGroupCheckableRadios" id="listGroupCheckableRadios1" value=""
+                                            checked="">
+                                        <label class="list-group-item rounded-3 py-3 d-flex gap-2"
+                                            for="listGroupCheckableRadios1">
+                                            <div class="dac-icon-wrapper rounded-circle"
+                                                style="background-color: #FFC60050;"><span
+                                                    class="material-symbols-rounded">payments</span>
+                                            </div>
+
+                                            <div class="d-flex gap-2 w-100 justify-content-between">
+                                                <div>
+                                                    <h6 class="mb-0">Asset Tagging</h6>
+                                                    <p class="mb-0 opacity-50 small">Hp Laptop Inspiron</p>
+                                                </div>
+                                                <small class="opacity-50 text-nowrap">now</small>
+                                            </div>
+                                        </label>
+
+
+
+                                        <input class="list-group-item-check pe-none" type="radio"
+                                            name="listGroupCheckableRadios" id="listGroupCheckableRadios2" value="">
+                                        <label class="list-group-item rounded-3 py-3 d-flex gap-2"
+                                            for="listGroupCheckableRadios2">
+                                            <div class="dac-icon-wrapper rounded-circle"
+                                                style="background-color: #567DF450;"><span
+                                                    class="material-symbols-rounded">payments</span>
+                                            </div>
+                                            <div class="d-flex gap-2 w-100 justify-content-between">
+                                                <div>
+                                                    <h6 class="mb-0">Asset Tagging</h6>
+                                                    <p class="mb-0 opacity-50 small">Hp Laptop Inspiron</p>
+                                                </div>
+                                                <small class="opacity-50 text-nowrap">now</small>
+                                            </div>
+                                        </label>
+
+                                        <input class="list-group-item-check pe-none" type="radio"
+                                            name="listGroupCheckableRadios" id="listGroupCheckableRadios3" value="">
+                                        <label class="list-group-item rounded-3 py-3 d-flex gap-2"
+                                            for="listGroupCheckableRadios3">
+                                            <div class="dac-icon-wrapper rounded-circle"
+                                                style="background-color: #FECECE;"><span
+                                                    class="material-symbols-rounded">payments</span>
+                                            </div>
+                                            <div class="d-flex gap-2 w-100 justify-content-between">
+                                                <div>
+                                                    <h6 class="mb-0">Asset Tagging</h6>
+                                                    <p class="mb-0 opacity-50 small">Hp Laptop Inspiron</p>
+                                                </div>
+                                                <small class="opacity-50 text-nowrap">now</small>
+                                            </div>
+                                        </label>
+
+                                        <input class="list-group-item-check pe-none" type="radio"
+                                            name="listGroupCheckableRadios" id="listGroupCheckableRadios4" value="">
+                                        <label class="list-group-item rounded-3 py-3 d-flex gap-2"
+                                            for="listGroupCheckableRadios4">
+                                            <div class="dac-icon-wrapper rounded-circle"
+                                                style="background-color: #FECECE;"><span
+                                                    class="material-symbols-rounded">payments</span>
+                                            </div>
+                                            <div class="d-flex gap-2 w-100 justify-content-between">
+                                                <div>
+                                                    <h6 class="mb-0">Asset Tagging</h6>
+                                                    <p class="mb-0 opacity-50 small">Hp Laptop Inspiron</p>
+                                                </div>
+                                                <small class="opacity-50 text-nowrap">now</small>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <!--     
+                                            <div>
+                                                <div class="d-block justify-content-center align-items-center">
+                                                    <div>
+                                                        <img src="./assets/img/dataEmpty.png"
+                                                             class="img-fluid d-block"
+                                                             width="350"/>
+                                                        <p class="my-2 d-block text-muted opacity-75">
+                                                            Looks like there's not enough data yet.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- </div> -->
+
+</section>

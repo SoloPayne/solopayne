@@ -1,0 +1,99 @@
+<!-- offcanvas -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+        <!-- full -->
+        <a
+            class="d-flex align-items-center justify-content-between mb-md-0 me-md-auto text-white text-decoration-none w-100 pointer">
+            <img src="./assets/img/assetkey-logo.svg" alt="">
+        </a>
+        <button type="button" class="btn-dark sidenav-close shadow" data-bs-dismiss="offcanvas" aria-label="Close"><span
+                class="material-symbols-rounded text-light">
+                close
+            </span></button>
+
+    </div>
+    <hr class="hr text-light my-0">
+    <div class="offcanvas-body">
+
+        <!-- 
+        <section *ngIf="currentAccount && currentAccount.accountType !== 'ASSET_ADMIN' && !currentOrganisation ">
+            <div class="text-center lh-2 p-1">
+                <h2 class="text-light" style="line-height: 2;">
+                    Not so fast 😀! <br>
+                    Please <strong class="fs-1" style="color: #f9c204;">select an organization </strong><br>
+                    so I can show you the navigation menu. <br>
+                    Just think of it as picking a destination on our online journey.<br>
+                    <strong class="fs-1" style="color: #f9c204;">Where shall we go today</strong>?
+                </h2>
+
+            </div>
+        </section> -->
+
+        <section class="">
+            <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark"
+                [ngClass]="!switchValue? 'sidebar-collapsed' : 'sidebar' ">
+
+                <section class="profile text-center" [ngClass]="!switchValue? 'd-none' : '' ">
+                    <section class="picture_and_coy-name">
+                        <div class="circle-container d-flex align-items-center justify-content-center">
+                            <div class="circle card p-2 rounded-circle">
+                                <img src="" class="profile-image" alt=""
+                                    *ngIf="">
+                                <ng-template #userImage>
+                                    <img class="profile-image" src="https://github.com/mdo.png" alt=""
+                                        style="width: 100%;">
+                                </ng-template>
+                            </div>
+                        </div>
+                        <div class="btn btn-light rounded-pill coy-name text-truncate" style="max-width: 170px;">
+                            organization name</div>
+                    </section>
+                    <section class="coy-branch_and_email">
+                        <!--                <div class="coy-branch">-->
+                        <!--                    <h6 class="text-light">{{}}</h6>-->
+                        <!--                </div>-->
+                        <div class="coy-email">
+                            <p class="small ">someone@email.company</p>
+                        </div>
+                    </section>
+
+                </section>
+                <ul class="nav nav-pills flex-column" style="margin-bottom: 8em;">
+                    <li class="nav-item" *ngFor="let data of dataFromSidebar">
+                        <a class="nav-link d-flex align-items-center gap-3 pointer" aria-current="page"
+                            data-bs-dismiss="offcanvas" aria-label="Close" 
+                            [routerLinkActive]="'active'">
+                            <span class="material-symbols-rounded">
+                                {{data.icon}}
+                            </span>
+                            <span class="name" *ngIf="switchValue? 'd-none' : '' ">{{data.name}}</span>
+                        </a>
+                    </li>
+                </ul>
+                <hr class="hr text-light">
+                <div class="dropdown">
+                    <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img [src]="" alt="" width="32" height="32"
+                            class="rounded-circle me-2">
+                        <strong class="text-truncate" style="max-width: 150px;"
+                            [ngClass]="!switchValue? 'd-none' : ''">organisation name</strong>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark text-small shadow text-light">
+                        <!-- <li><a class="dropdown-item pointer" (click)="toggleOrganizationSwitching();">Switch account</a>
+                        </li> -->
+                        <!--            <li><a class="dropdown-item pointer">Settings</a></li>-->
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item pointer" (click)="logout()">Sign out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+
+    </div>
+</div>

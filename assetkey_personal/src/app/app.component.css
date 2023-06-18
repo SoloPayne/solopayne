@@ -1,0 +1,43 @@
+.display-area {
+    position: absolute;
+    left: 20rem;
+    top: 2rem;
+    width: calc(100% - 22rem);
+    padding: 1rem;
+    transition: all .3s ease;
+}
+
+.display-area-collapsed {
+    position: absolute;
+    left: 10rem;
+    top: 2rem;
+    width: calc(100% - 14rem);
+    padding: 1rem;
+    transition: all .1s ease;
+}
+
+app-sidebar{
+    position: fixed;
+}
+
+@media screen and (max-width: 1000px){
+    .display-area-collapsed {
+        position: absolute;
+        left: 6rem;
+        top: 2rem;
+        width: calc(100% - 7rem);
+        padding: 1rem;
+        transition: all .1s ease;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .display-area-collapsed {
+        position: absolute;
+        left: 2rem;
+        top: 2rem;
+        width: calc(100% - 4rem);
+        padding: 1rem;
+        transition: all .1s ease;
+    }
+}
